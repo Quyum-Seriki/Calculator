@@ -35,6 +35,7 @@ input::placeholder{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 15px;
+    margin-left: -5px;
 }
 .col-1 h2, .col-2 h2,.col-3 h2{
     color: #000;
@@ -46,6 +47,7 @@ input::placeholder{
 }
 .col-4,.col-8,.col-12,.col-16,.col-19{
     background-color:#FF9500;
+    margin-left: 10px;
     }
  button {
     border-radius: 50%;
@@ -68,7 +70,50 @@ input::placeholder{
     padding-left: 30px;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width:350px ){
+    body{
+        background-color:#1C1C1C;
+    }
+    .calculator{
+        width: 100%;
+        border-radius: 3px;
+        padding: 35px 25px;
+        margin: 0;
+    }
+    .row-2{
+        grid-row-gap: 25px;
+        margin-left: -10px;
+    }
+    input{
+        font-size: 5em;
+    }
+    button{
+        width: 100px;
+        height: 100px;
+    }
+    .button-17{
+        width: 220px;
+        height: 100px;
+    }
+    input{
+        padding:60px 0px 70px 40px;
+    }
+}
+@media (min-width: 350px) and (max-width:475px ){
+    .calculator{
+        width: 100%; 
+        margin: 0;
+        border-radius: 3px;
+    }
+    .row-2{
+        margin-left: -20px;
+        gap: 7px;
+    }
+    input::placeholder{
+        margin-left: 30px;
+    }
+}
+@media (min-width: 475px) and (max-width: 768px) {
  .calculator{
     width: 80%;
     margin-top: 16%;
